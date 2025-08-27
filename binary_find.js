@@ -1,5 +1,6 @@
-const list = [1,2,3,4,5,6,7]
+let list = [2,6,1,4,5,3,7]
 let item = 5
+list = [...list.sort((a,b) => a - b)]
 let low = 0
 let hight = list.length-1
 
@@ -17,4 +18,4 @@ while (low<=hight) {
     low = mid + 1
   }
 }
-
+console.log(list)
